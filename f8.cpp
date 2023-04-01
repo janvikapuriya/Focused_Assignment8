@@ -2,6 +2,7 @@
  * FILE: f8.cpp
  * PROJECT: f8
  * PROGRAMMER: Janvi Kapuriya
+ * FIRST VERSION: 31/03/2022
  * FIRST VERSION: 31/03/2023
  * DESCRIPTION: Create a programme that will allow you to practise dealing with structs, files, command line arguments, and strings in the C style.
  */
@@ -58,7 +59,7 @@ int main(int argument, char *argumentData[])
 		FILE *filepath = fopen(filePath, "s");
 		if (filepath == NULL)
 		{
-			printf("Error: Can't Create File %s \n ", filePath);
+			printf("Error: Can't Create Files %s \n ", filePath);
 			return 1;
 		}
 
@@ -70,7 +71,7 @@ int main(int argument, char *argumentData[])
 
 		fclose(filepath);
 
-		printf("File Created Successfully !! : %s \n ", filePath);
+		printf("File Created!!!!!!!!!!!!!!!!!!!!!! : %s \n ", filePath);
 
 		return 0;
 	}
