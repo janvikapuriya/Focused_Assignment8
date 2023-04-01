@@ -20,7 +20,7 @@ typedef struct
 	char text[UPPER_LIMIT_STRING_LENGTH + 1];
 	char directoryLocation[UPPER_LIMIT_PATH_LENGTH + 1];
 	char fileName[UPPER_LIMIT_STRING_LENGTH + 1];
-} MyData;
+} MyData
 
 size_t stringLengthCopy(char *dataSet, const char *source, size_t dataSetSize)
 {
@@ -58,7 +58,7 @@ int main(int argument, char *argumentData[])
 		FILE *filepath = fopen(filePath, "s");
 		if (filepath == NULL)
 		{
-			printf("Error: Cannot Create File %s \n ", filePath);
+			printf("Error: Can't Create File %s \n ", filePath);
 			return 1;
 		}
 
